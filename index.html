@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hadson e Raphael</title>
         <link rel="stylesheet" href="./css/estilo.css">
+        <script src="./js/scripts.js"></script>
+        <script type="text/javascript">
+            alert('Bem Vindo!');
+        </script>
     </head>
     <body>
         <header>
@@ -39,131 +43,33 @@
                             <div class="block">
                                 <div><img src="./img/ac.png" alt="soldado" height="42" width="42"></div>
                                 <div><h1>Game1</h1></div>
-                                <div>Texto.....</div>
+                                <p class="mais">Mais</p>
                             </div>  
                         </div>
                         <div class="card">
                             <div class="block">
                                 <div><img src="./img/ac.png" alt="soldado" height="42" width="42"></div>
                                 <div><h1>Game2</h1></div>
-                                <div>Texto.....</div>
+                                <p class="mais">Mais</p>
                             </div>  
                         </div>
                         <div class="card">
                             <div class="block">
                                 <div><img src="./img/ac.png" alt="soldado" height="42" width="42"></div>
                                 <div><h1>Game3</h1></div>
-                                <div>Texto.....</div>
+                                <p id="mais">Mais</p>
                             </div>  
                         </div>
                         <div class="card">
                             <div class="block">
                                 <div><img src="./img/ac.png" alt="soldado" height="42" width="42"></div>
                                 <div><h1>Game4</h1></div>
-                                <div>Texto.....</div>
+                                <p id="mais">Mais</p>
                             </div>  
                         </div>
                     </div>    
             </section>
-            <section>
-                <h3>Tiro</h3>
-                <div class="flex-container">
-                    <div class="card">
-                        <div class="block">
-                            <div><img src="./img/tiro.png" alt="soldado" height="42" width="42"></div>
-                            <div><h1>Game1</h1></div>
-                            <div>Texto.....</div>
-                        </div>   
-                    </div>
-                    <div class="card">
-                        <div class="block">
-                            <div><img src="./img/tiro.png" alt="soldado" height="42" width="42"></div>
-                            <div><h1>Game2</h1></div>
-                            <div>Texto.....</div>
-                        </div>  
-                    </div>
-                    <div class="card">
-                        <div class="block">
-                            <div><img src="./img/tiro.png" alt="soldado" height="42" width="42"></div>
-                            <div><h1>Game3</h1></div>
-                            <div>Texto.....</div>
-                        </div>  
-                    </div>
-                    <div class="card">
-                        <div class="block">
-                            <div><img src="./img/tiro.png" alt="soldado" height="42" width="42"></div>
-                            <div><h1>Game4</h1></div>
-                            <div>Texto.....</div>
-                        </div>  
-                    </div>
-                </div>    
-            </section>
-            <section>
-                <h3>Terror</h3>
-                <div class="flex-container">
-                    <div class="card">
-                        <div class="block">
-                            <div><img src="./img/tr.png" alt="soldado" height="42" width="42"></div>
-                            <div><h1>Game1</h1></div>
-                            <div>Texto.....</div>
-                        </div>  
-                    </div>
-                    <div class="card">
-                        <div class="block">
-                            <div><img src="./img/tr.png" alt="soldado" height="42" width="42"></div>
-                            <div><h1>Game2</h1></div>
-                            <div>Texto.....</div>
-                        </div>  
-                    </div>
-                    <div class="card">
-                        <div class="block">
-                            <div><img src="./img/tr.png" alt="soldado" height="42" width="42"></div>
-                            <div><h1>Game3</h1></div>
-                            <div>Texto.....</div>
-                        </div>  
-                    </div>
-                    <div class="card">
-                        <div class="block">
-                            <div><img src="./img/tr.png" alt="soldado" height="42" width="42"></div>
-                            <div><h1>Game4</h1></div>
-                            <div>Texto.....</div>
-                        </div>  
-                    </div>
-                </div>    
-            </section>
-            <section>
-                <h3>Esportes</h3>
-                <div class="flex-container">
-                    <div class="card">
-                        <div class="block">
-                            <div><img src="./img/sp.png" alt="soldado" height="42" width="42"></div>
-                            <div><h1>Game1</h1></div>
-                            <div>Texto.....</div>
-                        </div>  
-                    </div>
-                    <div class="card">
-                        <div class="block">
-                            <div><img src="./img/sp.png" alt="soldado" height="42" width="42"></div>
-                            <div><h1>Game2</h1></div>
-                            <div>Texto.....</div>
-                        </div>  
-                    </div>
-                    <div class="card">
-                        <div class="block">
-                            <div><img src="./img/sp.png" alt="soldado" height="42" width="42"></div>
-                            <div><h1>Game3</h1></div>
-                            <div>Texto.....</div>
-                        </div>  
-                    </div>
-                    <div class="card">
-                        <div class="block">
-                            <div><img src="./img/sp.png" alt="soldado" height="42" width="42"></div>
-                            <div><h1>Game4</h1></div>
-                            <div>Texto.....</div>
-                        </div>  
-                    </div>
-                </div>    
-            </section>
+            <input type="button" onclick="alteraMais()" name="btmais" id="btmais" value="Expandir Mais">
         </main>    
         <section class="sc2">
             <div id="sn">
@@ -195,9 +101,6 @@
          </section>
         <footer>
             <p>© 2024, Omega Games, Inc. Todos os direitos reservados. As marcas e nomes de produtos são marcas registradas de seus respectivos donos. </p>
-            <a href="#" class="spc">Termos de Serviço</a>
-            <a href="#" class="spc"> Políticas de Privacidade</a>
-            <a href="#" class="spc">Política de Reebolso</a>
         </footer>
     </body>
 </html>
