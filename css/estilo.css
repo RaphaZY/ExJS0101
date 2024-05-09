@@ -11,6 +11,11 @@ header{
     text-align: center;
     padding: 1em; 
 }
+input[type=button]{
+    padding: 5px;
+    margin: 5px;
+    width: 140px;
+  }
 nav{text-align: center;
     background-color: #555;
     color: #fff;

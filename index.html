@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hadson e Raphael</title>
         <link rel="stylesheet" href="./css/estilo.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
         <script src="./js/scripts.js"></script>
         <script type="text/javascript">
             alert('Bem Vindo!');
@@ -37,8 +38,16 @@
         </nav>
         <main>
             <section>
+                <div class="d-flex justify-content-center" style="flex-direction: column; align-items: center;">
+                    <h2>Preparados para a Super Promoção de <b style="color: red;">50%</b> de desconto!!</h2>
+                    <div class="d-flex"><samp class="fs-2" id="temporest"></samp></div>
+                    <samp id="animate_confetti"></samp> 
+                    <h2 id="promocao"></h2>
+                </div>
+            </section>
+            <section>
                 <h3>Ação</h3>
-                    <div class="flex-container">
+                    <div class="flex-container" id="divcard">
                         <div class="card">
                             <div class="block">
                                 <div><img src="./img/ac.png" alt="soldado" height="42" width="42"></div>
@@ -57,19 +66,21 @@
                             <div class="block">
                                 <div><img src="./img/ac.png" alt="soldado" height="42" width="42"></div>
                                 <div><h1>Game3</h1></div>
-                                <p id="mais">Mais</p>
+                                <p class="mais">Mais</p>
                             </div>  
                         </div>
                         <div class="card">
                             <div class="block">
                                 <div><img src="./img/ac.png" alt="soldado" height="42" width="42"></div>
                                 <div><h1>Game4</h1></div>
-                                <p id="mais">Mais</p>
+                                <p class="mais">Mais</p>
                             </div>  
                         </div>
                     </div>    
             </section>
-            <input type="button" onclick="alteraMais()" name="btmais" id="btmais" value="Expandir Mais">
+            <div class="d-flex justify-content-center">
+                <input type="button" onclick="alteraMais()" name="btmais" id="btmais" value="Alterar Mais">
+            </div>
         </main>    
         <section class="sc2">
             <div id="sn">
@@ -83,7 +94,7 @@
                 <div class="flex-container">
                     <label for="texto"><h4> Email:</h4></label>
                     <div>
-                        <input type="text" id="texto" class="es topo">
+                        <input type="text" id="texto" class="es">
                     </div>
                 </div>
                     <div class="flex-container">
@@ -102,5 +113,25 @@
         <footer>
             <p>© 2024, Omega Games, Inc. Todos os direitos reservados. As marcas e nomes de produtos são marcas registradas de seus respectivos donos. </p>
         </footer>
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script>
+    function confete(){
+        let params = {
+            particleCount: 500, // Quantidade de confetes
+            spread: 90, // O quanto eles se espalham
+            startVelocity: 70, // Velocidade inicial
+            origin: { x: 0, y: 0.5 }, // Posição inicial na tela
+            angle: 45 // Ângulo em que os confetes serão lançados
+        };
+        // Joga confetes da esquerda pra direita
+        confetti(params);
+        // Joga confetes da direita para a esquerda
+        params.origin.x = 1;
+        params.angle = 135;
+        confetti(params);
+    }
+    </script>
     </body>
 </html>
